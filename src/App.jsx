@@ -1,6 +1,67 @@
 import './App.css'
 
 function App() {
+  const people = [
+    {
+      name: "Gervonta Davis",
+      record: "29-0-0",
+      division: "lightweight",
+      location: "Baltimore, MD",
+      career: "2013-2023",
+      stance: "southpaw",
+      height: 166,
+      reach: 171
+    },
+    {
+      name: "Arnold Barboza Jr",
+      record: "29-0-0",
+      division: "super light",
+      location: "Los Angeles, California, USA",
+      career: "2013-2024",
+      stance: "orthodox",
+      height: 175,
+      reach: 183
+    },
+    {
+      name: "Isaac Cruz",
+      record: "26-2-1",
+      division: "super light",
+      location: "Mexico City, Distrito Federal, Mexico",
+      career: "2015-2024",
+      stance: "orthodox",
+      height: 163,
+      reach: 160,
+    },
+    {
+      name: "Masanori Rikishi",
+      record: "15-1-0",
+      division: "super feather",
+      location: "Nagoya, Aichi, Japan",
+      career: "2017-2024",
+      stance: "southpaw",
+      height: 178,
+    },
+    {
+      name: "Giovani Santillan",
+      record: "32-0-0",
+      division: "welter",
+      location: "San Diego, California, USA",
+      career: "2012-2023",
+      stance: "southpaw",
+      height: 173,
+      reach: 174,
+    },
+    {
+      name: "Oscar Valdez",
+      record: "32-2-0",
+      division: "super feather",
+      location: "Nogales, Sonora, Mexico",
+      career: "2012-2024",
+      stance: "orthodox",
+      height: 166,
+      reach: 168,
+    }
+  ]
   return (
     <>
       <h1 className="text-4xl font-bold mb-4">People</h1>
