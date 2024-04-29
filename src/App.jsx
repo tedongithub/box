@@ -158,6 +158,30 @@ function App() {
           </tr>
         </tbody>
       </table>
+      <div className="mt-4 p-6 max-w-96 border border-gray-300 rounded-lg shadow-lg">
+        <div className="flex items-center mt-2">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Avatar"
+            className="w-20 h-20 rounded-full border-2 border-gray-300"
+          />
+          <div className="ml-4">
+            <p className="text-lg font-semibold">{'John'}</p>
+            <p className="text-sm">{'Los Angeles'}</p>
+          </div>
+        </div>
+        <div className="mt-2 text-slate-800">
+          <p>
+            <strong>W-L-D</strong> {'30-3-0'}
+          </p>
+          <p>
+            <strong>Division</strong> {'Light Heavy'}
+          </p>
+          <p>
+            <strong>Career</strong> {'2020-2024'}
+          </p>
+        </div>
+      </div>
     </>
   )
 }
