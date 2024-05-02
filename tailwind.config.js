@@ -1,7 +1,7 @@
 import defaultTheme from 'tailwindcss/defaultTheme.js'
 
 export default {
-	content: ['./src/*.{jsx,js}'],
+	content: ['./frontend/*.{jsx,js}'],
 	theme: {
 		extend: {
 			fontFamily: {

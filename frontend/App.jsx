@@ -1,7 +1,8 @@
 import './App.css'
-import { Fragment } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { apiUrl } from '../config'
 
 export function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -80,6 +81,15 @@ function Dropdown() {
 }
 
 function App() {
+  const [people, setPeople] = useState([])
+  useEffect(() => {
+    fetch(`${apiUrl}/people`)
+      .then((res) => res.json())
+      .then((data) => {
+        setPeople(data);
+      })
+  }, []);
+
   return (
     <>
       <h1 className="text-4xl font-bold mb-4">People</h1>
